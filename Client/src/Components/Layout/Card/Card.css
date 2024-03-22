@@ -1,0 +1,35 @@
+.card {
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-info {
+    padding: 10px;
+  }
+  
+  .city-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  

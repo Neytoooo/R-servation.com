@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    padding: 10px 20px;
+  }
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .login-button, .register-button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover, .register-button:hover {
+    background: white;
+    color: #000046;
+  }
+  

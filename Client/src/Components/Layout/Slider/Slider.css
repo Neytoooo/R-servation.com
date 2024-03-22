@@ -1,0 +1,47 @@
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Ne spécifie que la transition de l'opacité */
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slider-container {
+    position: relative;
+    height: 300px; /* Ajustez la hauteur selon votre design */
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Transition de la transformation */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+    visibility: hidden;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

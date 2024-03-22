@@ -1,0 +1,68 @@
+.home {
+    background-image: url('chemin/vers/votre/image/background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Maintient les éléments empilés sur les écrans larges */
+    align-items: center;
+    padding: 0 20px; /* Espace à gauche et à droite du conteneur */
+  }
+  
+  .content {
+    flex: 1; /* Prend tout l'espace vertical disponible */
+    padding-left: 30vh; /* Padding à gauche */
+    padding-right: 30vh; /* Padding à droite */
+  }
+  
+  .main-content {
+    display: flex; /* Permet aux enfants de remplacer le comportement de layout */
+  }
+  
+  
+  
+  
+  .card {
+    border: 2px solid rgb(133, 129, 129); /* Bordure blanche autour de la carte */
+    border-radius: 10px; /* Arrondi des coins de la carte */
+    background-color: #444141; /* Couleur de fond de la carte, ajustez selon vos besoins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée optionnelle pour un effet de profondeur */
+    overflow: hidden; /* Pour s'assurer que tout contenu interne ne déborde pas des coins arrondis */
+    display: flex;
+    
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les cartes */
+    padding: 20px; /* Padding autour de la grille de cartes */
+  }
+  
+  /* Assurez-vous que l'image de la carte s'adapte bien */
+  .card-image {
+    width: 100%; /* Largeur complète de la carte */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+    display: block; /* Élimine tout espace blanc sous l'image */
+  }
+  
+  @media (max-width: 1024px) {
+    .cards-grid {
+      grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les écrans moyens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards-grid {
+      grid-template-columns: 1fr; /* Une colonne pour les petits écrans */
+    }
+    .content, .main-content {
+      padding: 0 20px; /* Ajustement du padding pour les petits écrans */
+    }
+  }
+  
+  
+  

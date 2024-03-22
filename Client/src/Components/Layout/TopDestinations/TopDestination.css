@@ -1,0 +1,26 @@
+.top-destinations {
+    background-color: #504d4d; /* Couleur de fond blanche */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée pour le relief */
+    padding: 20px; /* Espace intérieur */
+    margin: 20px; /* Espace extérieur */
+    
+  }
+  
+  .top-destinations h2 {
+    margin-bottom: 20px; /* Espace sous le titre */
+  }
+  
+  .destination-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Espace vertical à l'intérieur de chaque élément */
+  }
+  
+  
+  .destination-price {
+    /* Style pour le prix de la destination */
+    color: #ff6b6b; /* La couleur peut être ajustée en fonction de votre design */
+  }
+  
